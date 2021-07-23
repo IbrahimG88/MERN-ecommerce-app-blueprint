@@ -57,10 +57,10 @@ const Rating = ({ value, text, color }) => {
           style={{ color }}
           className={
             value >= 5
-              ? "fas fa-star"
+              ? "fas fa-star" // full filled star
               : value >= 4.5
-              ? "fas fa-star-half-alt"
-              : "far fa-star"
+              ? "fas fa-star-half-alt" // half star icon
+              : "far fa-star" // empty star
           }
         ></i>
       </span>
