@@ -16,7 +16,8 @@ const ProductScreen = ({ match }) => {
     };
 
     fetchProduct();
-  }, []);
+  }, [match]);
+  // whenever match and the id in the parameter of the url changes useEffect is being called
 
   return (
     <>
