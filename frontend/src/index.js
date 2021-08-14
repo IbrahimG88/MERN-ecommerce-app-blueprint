@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// redux setup:
 import { Provider } from "react-redux";
 import store from "./store";
+//
 import "./bootstrap.min.css";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
+  //redux setup:
   <Provider store={store}>
     <App />
   </Provider>,
+  //
   document.getElementById("root")
 );
 
