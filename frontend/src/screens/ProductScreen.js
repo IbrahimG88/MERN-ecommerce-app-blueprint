@@ -17,7 +17,7 @@ import { listProductDetails } from "../actions/productActions";
 
 //this match will look for the props.match thats is part of props
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
   const productDetails = useSelector((state) => state.productDetails);
